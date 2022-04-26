@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+div{
+  margin-top: 20px;
+  text-align: center;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.title{
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 25px;
+}
+
+.checkbox{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.label{
+  display:flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+}
+
+.span{
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.input:checked ~ .span{
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position:center;
+} 
+
+.input:checked ~ .table-tennis{
+  background-image: url('../images/table-tennis.png');
+}
+
+.input:checked ~ .basketball{
+  background-image: url('../images/basketball-ball.png');
+}
+
+.input:checked ~ .volleyball{
+  background-image: url('../images/volleyball-ball.png');
+}
+
+.input:checked ~ .hockey-puck{
+  background-image: url('../images/hockey-puck.png');
+}
+
+.input:checked ~ .hockey-dis-chec{
+  background-image: url('../images/hockey-puck.png');
+}
+
+.input:checked ~ .hockey-dis{
+  background-image: url('../images/hockey-puck.png');
+}
+
+.input:focus ~ .span{
+  box-shadow: 0px 0px 15px 0px rgb(44, 62, 80);
+}
+
+.dis{
+  opacity: 0.5;
+}
+
+.input:disabled ~ .hockey-dis-chec{
+  background-image: url('../images/hockey-puck.png'); 
+}
+

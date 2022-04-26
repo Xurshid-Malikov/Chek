@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/minifier.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+</head>
+<body>
+  <div> 
+    <h1 class="title">Qaysi sportni yoqtirasiz?</h1>
+    <form class="checkbox" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+      <label  class="label" >
+        Stol tennisi
+        <input class="input visually-hidden" type="checkbox" name="table-tennis">
+        <span class="span table-tennis"></span>
+      </label>
+      <label  class="label" >
+        Basketbol
+        <input class="input visually-hidden" type="checkbox" name="basketball">
+        <span class="span basketball"></span>
+      </label>
+      <label  class="label" >
+        Voleybol
+        <input class="input visually-hidden" type="checkbox" name="volleyball">
+        <span class="span volleyball"></span>
+      </label>
+      <label  class="label" >
+       Hokkey
+        <input class="input visually-hidden" type="checkbox" name="hockey">
+        <span class="span hockey-puck"></span>
+      </label>
+      <label  class="label dis" >
+        Hokkey
+         <input class="input visually-hidden" type="checkbox" name="hockey_dis_chec" disabled checked>
+         <span class="span hockey-dis-chec"></span>
+      </label>
+      <label  class="label dis" >
+        Hokkey
+         <input class="input visually-hidden" type="checkbox" name="hockey_dis" disabled>
+         <span class="span hockey-dis"></span>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
